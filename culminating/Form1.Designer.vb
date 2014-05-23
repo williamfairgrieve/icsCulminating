@@ -22,17 +22,55 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.closeButton = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.infoButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'closeButton
+        '
+        Me.closeButton.Location = New System.Drawing.Point(13, 398)
+        Me.closeButton.Name = "closeButton"
+        Me.closeButton.Size = New System.Drawing.Size(455, 39)
+        Me.closeButton.TabIndex = 0
+        Me.closeButton.Text = "Close"
+        Me.closeButton.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Monotype Corsiva", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(114, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(221, 33)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "William's Utillities"
+        '
+        'infoButton
+        '
+        Me.infoButton.Location = New System.Drawing.Point(393, 9)
+        Me.infoButton.Name = "infoButton"
+        Me.infoButton.Size = New System.Drawing.Size(75, 23)
+        Me.infoButton.TabIndex = 2
+        Me.infoButton.Text = "INFO"
+        Me.infoButton.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(467, 485)
+        Me.ClientSize = New System.Drawing.Size(480, 449)
+        Me.Controls.Add(Me.infoButton)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.closeButton)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Utilities"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
+    Friend WithEvents closeButton As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents infoButton As System.Windows.Forms.Button
 
 End Class
