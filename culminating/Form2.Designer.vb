@@ -26,9 +26,11 @@ Partial Class tempForm
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.celcBox = New System.Windows.Forms.TextBox()
+        Me.ferBox = New System.Windows.Forms.TextBox()
+        Me.kelBox = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.invalidLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -60,42 +62,65 @@ Partial Class tempForm
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(192, 26)
+        Me.Button1.Location = New System.Drawing.Point(192, 45)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(86, 47)
+        Me.Button1.Size = New System.Drawing.Size(86, 28)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Calculate"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'celcBox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(84, 10)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 4
+        Me.celcBox.Location = New System.Drawing.Point(84, 10)
+        Me.celcBox.Name = "celcBox"
+        Me.celcBox.Size = New System.Drawing.Size(100, 20)
+        Me.celcBox.TabIndex = 4
         '
-        'TextBox2
+        'ferBox
         '
-        Me.TextBox2.Location = New System.Drawing.Point(84, 33)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 5
+        Me.ferBox.Location = New System.Drawing.Point(84, 33)
+        Me.ferBox.Name = "ferBox"
+        Me.ferBox.Size = New System.Drawing.Size(100, 20)
+        Me.ferBox.TabIndex = 5
         '
-        'TextBox3
+        'kelBox
         '
-        Me.TextBox3.Location = New System.Drawing.Point(84, 55)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 6
+        Me.kelBox.Location = New System.Drawing.Point(84, 55)
+        Me.kelBox.Name = "kelBox"
+        Me.kelBox.Size = New System.Drawing.Size(100, 20)
+        Me.kelBox.TabIndex = 6
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(192, 11)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(86, 28)
+        Me.Button2.TabIndex = 7
+        Me.Button2.Text = "Reset"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'invalidLabel
+        '
+        Me.invalidLabel.AutoSize = True
+        Me.invalidLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.invalidLabel.ForeColor = System.Drawing.Color.Red
+        Me.invalidLabel.Location = New System.Drawing.Point(49, 86)
+        Me.invalidLabel.Name = "invalidLabel"
+        Me.invalidLabel.Size = New System.Drawing.Size(173, 25)
+        Me.invalidLabel.TabIndex = 8
+        Me.invalidLabel.Text = "INVALID INPUT"
+        Me.invalidLabel.Visible = False
         '
         'tempForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 87)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.ClientSize = New System.Drawing.Size(284, 120)
+        Me.Controls.Add(Me.invalidLabel)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.kelBox)
+        Me.Controls.Add(Me.ferBox)
+        Me.Controls.Add(Me.celcBox)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -110,7 +135,9 @@ Partial Class tempForm
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents celcBox As System.Windows.Forms.TextBox
+    Friend WithEvents ferBox As System.Windows.Forms.TextBox
+    Friend WithEvents kelBox As System.Windows.Forms.TextBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents invalidLabel As System.Windows.Forms.Label
 End Class

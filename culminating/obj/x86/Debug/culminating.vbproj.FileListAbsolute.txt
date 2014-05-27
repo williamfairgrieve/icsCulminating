@@ -8,3 +8,4 @@ h:\visual studio 2010\Projects\culminating\culminating\obj\x86\Debug\culminating
 h:\visual studio 2010\Projects\culminating\culminating\obj\x86\Debug\culminating.xml
 h:\visual studio 2010\Projects\culminating\culminating\obj\x86\Debug\culminating.pdb
 h:\visual studio 2010\Projects\culminating\culminating\obj\x86\Debug\WindowsApplication1.AboutBox1.resources
+H:\Visual Studio 2010\Projects\culminating\culminating\obj\x86\Debug\WindowsApplication1.tempForm.resources

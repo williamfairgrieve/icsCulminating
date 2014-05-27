@@ -1,4 +1,5 @@
-﻿Public Class Form1
+﻿Imports System.Text.RegularExpressions 'Import regular expression library
+Public Class Form1
 
     Private Sub closeButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles closeButton.Click
         Me.Close()
@@ -9,21 +10,31 @@
     End Sub
 
     Private Sub slopeCalc_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles slopeCalc.Click
-        Dim strFirstCoordinate As String
-        Dim strSecondCoordinate As String
-
-        Dim sinFirstCoordinate(0 To 1) As Single
+        Dim strFirstXCoordinate As String 'Declare all of the strings
+        Dim strFirstYCoordinate As String
+        Dim strSecondXCoordinate As String
+        Dim strSecondYCoordinate As String
+        Dim regexPattern As String = "(0|1|2|3|4|5|6|7|8|9)+" 'This is the regex pattern I will use later
+        Dim sinFirstCoordinate(0 To 1) As Single 'Declare the arrays to hold the coordinates
         Dim sinSecondCoordinate(0 To 1) As Single
+        Dim sinSlope As Single 'Declare single for slope
 
-        strFirstCoordinate = InputBox("Enter your first coordinate (x,y): ")
-        strSecondCoordinate = InputBox("Enter your second coordinate (x,y): ")
+        strFirstXCoordinate = InputBox("Enter your first X coordinate: ")
+        strFirstYCoordinate = InputBox("Enter your first Y coordinate: ")
+        strSecondXCoordinate = InputBox("Enter your second X coordinate: ")
+        strSecondYCoordinate = InputBox("Enter your second Y coordinate: ")
 
-        sinFirstCoordinate(0) = 666
-        sinFirstCoordinate(1) = 69
+        sinFirstCoordinate(0) = Single.Parse(strFirstXCoordinate)
+        sinFirstCoordinate(1) = Single.Parse(strFirstYCoordinate)
+        sinSecondCoordinate(0) = Single.Parse(strSecondXCoordinate)
+        sinSecondCoordinate(1) = Single.Parse(strSecondYCoordinate)
 
-        sinSecondCoordinate(0) = 420
-        sinSecondCoordinate(1) = 520
+        sinSlope = (sinSecondCoordinate(1) - sinFirstCoordinate(1)) / (sinSecondCoordinate(0) - sinFirstCoordinate(0))
 
-        MsgBox("Coord 1  " & sinFirstCoordinate(0) & sinFirstCoordinate(1) & "Coord 2  " & sinSecondCoordinate(0) & sinSecondCoordinate(1))
+        MsgBox(sinSlope)
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        tempForm.Show()
     End Sub
 End Class
