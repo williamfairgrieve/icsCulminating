@@ -57,6 +57,12 @@
     End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
-        My.Computer.Clipboard.SetText(inputBox.Text)
+        Try
+            My.Computer.Clipboard.SetText(inputBox.Text)
+            invalidLabel.Visible = False
+        Catch ex As Exception
+            invalidLabel.Visible = True
+        End Try
+
     End Sub
 End Class
