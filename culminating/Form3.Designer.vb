@@ -29,6 +29,8 @@ Partial Class trigCalc
         Me.invalidLabel = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.radRB = New System.Windows.Forms.RadioButton()
+        Me.degRB = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'inputBox
@@ -91,18 +93,42 @@ Partial Class trigCalc
         'Button5
         '
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(12, 99)
+        Me.Button5.Location = New System.Drawing.Point(12, 100)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(133, 23)
         Me.Button5.TabIndex = 6
         Me.Button5.Text = "Copy to Clipboard"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'radRB
+        '
+        Me.radRB.AutoSize = True
+        Me.radRB.Checked = True
+        Me.radRB.Location = New System.Drawing.Point(12, 12)
+        Me.radRB.Name = "radRB"
+        Me.radRB.Size = New System.Drawing.Size(48, 17)
+        Me.radRB.TabIndex = 7
+        Me.radRB.TabStop = True
+        Me.radRB.Text = "RAD"
+        Me.radRB.UseVisualStyleBackColor = True
+        '
+        'degRB
+        '
+        Me.degRB.AutoSize = True
+        Me.degRB.Location = New System.Drawing.Point(64, 12)
+        Me.degRB.Name = "degRB"
+        Me.degRB.Size = New System.Drawing.Size(48, 17)
+        Me.degRB.TabIndex = 8
+        Me.degRB.Text = "DEG"
+        Me.degRB.UseVisualStyleBackColor = True
+        '
         'trigCalc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 131)
+        Me.Controls.Add(Me.degRB)
+        Me.Controls.Add(Me.radRB)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.invalidLabel)
@@ -123,4 +149,6 @@ Partial Class trigCalc
     Friend WithEvents invalidLabel As System.Windows.Forms.Label
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents radRB As System.Windows.Forms.RadioButton
+    Friend WithEvents degRB As System.Windows.Forms.RadioButton
 End Class
