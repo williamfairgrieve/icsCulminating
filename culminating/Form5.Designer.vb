@@ -34,6 +34,7 @@ Partial Class quadForm
         Me.invalidLabel = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.outputXs = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -127,17 +128,26 @@ Partial Class quadForm
         'outputXs
         '
         Me.outputXs.AutoSize = True
-        Me.outputXs.Location = New System.Drawing.Point(65, 227)
+        Me.outputXs.Location = New System.Drawing.Point(62, 264)
         Me.outputXs.Name = "outputXs"
-        Me.outputXs.Size = New System.Drawing.Size(27, 13)
+        Me.outputXs.Size = New System.Drawing.Size(0, 13)
         Me.outputXs.TabIndex = 10
-        Me.outputXs.Text = "asdf"
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(65, 226)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(168, 23)
+        Me.Button2.TabIndex = 11
+        Me.Button2.Text = "RESET"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'quadForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(289, 295)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.outputXs)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.invalidLabel)
@@ -167,4 +177,5 @@ Partial Class quadForm
     Friend WithEvents invalidLabel As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents outputXs As System.Windows.Forms.Label
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class
