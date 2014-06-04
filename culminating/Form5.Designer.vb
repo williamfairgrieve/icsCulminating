@@ -159,6 +159,7 @@ Partial Class quadForm
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "quadForm"
         Me.Text = "Quadratic Solver"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
