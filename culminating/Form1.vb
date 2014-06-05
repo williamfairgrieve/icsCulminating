@@ -82,4 +82,8 @@ Public Class Form1
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
         quadForm.Show() 'Show the quadratic solver
     End Sub
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+        baseForm.Show() 'Show the base converter
+    End Sub
 End Class

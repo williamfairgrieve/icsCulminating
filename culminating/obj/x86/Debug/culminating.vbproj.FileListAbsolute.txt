@@ -12,3 +12,4 @@ H:\Visual Studio 2010\Projects\culminating\culminating\obj\x86\Debug\WindowsAppl
 H:\Visual Studio 2010\Projects\culminating\culminating\obj\x86\Debug\WindowsApplication1.trigCalc.resources
 H:\Visual Studio 2010\Projects\culminating\culminating\obj\x86\Debug\WindowsApplication1.cdForm.resources
 H:\Visual Studio 2010\Projects\culminating\culminating\obj\x86\Debug\WindowsApplication1.quadForm.resources
+H:\Visual Studio 2010\Projects\culminating\culminating\obj\x86\Debug\WindowsApplication1.baseForm.resources
