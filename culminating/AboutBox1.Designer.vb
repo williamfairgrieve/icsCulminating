@@ -69,7 +69,7 @@ Partial Class AboutBox1
         Me.LabelCompanyName.Name = "LabelCompanyName"
         Me.LabelCompanyName.Size = New System.Drawing.Size(257, 17)
         Me.LabelCompanyName.TabIndex = 0
-        Me.LabelCompanyName.Text = "Transverse Software"
+        Me.LabelCompanyName.Text = "Generic Software"
         Me.LabelCompanyName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'LabelCopyright
@@ -93,7 +93,7 @@ Partial Class AboutBox1
         Me.LabelVersion.Name = "LabelVersion"
         Me.LabelVersion.Size = New System.Drawing.Size(257, 17)
         Me.LabelVersion.TabIndex = 0
-        Me.LabelVersion.Text = "Version 0.8"
+        Me.LabelVersion.Text = "Version 1.0"
         Me.LabelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'LabelProductName

@@ -12,6 +12,7 @@ H:\Visual Studio 2010\Projects\culminating\culminating\obj\x86\Release\culminati
 H:\Visual Studio 2010\Projects\culminating\culminating\obj\x86\Release\WindowsApplication1.trigCalc.resources
 H:\Visual Studio 2010\Projects\culminating\culminating\obj\x86\Release\WindowsApplication1.cdForm.resources
 H:\Visual Studio 2010\Projects\culminating\culminating\obj\x86\Release\WindowsApplication1.quadForm.resources
+H:\Visual Studio 2010\Projects\culminating\culminating\obj\x86\Release\WindowsApplication1.baseForm.resources
 H:\Visual Studio 2010\Projects\culminating\culminating\bin\Release\culminating.exe.manifest
 H:\Visual Studio 2010\Projects\culminating\culminating\bin\Release\culminating.application
 H:\Visual Studio 2010\Projects\culminating\culminating\obj\x86\Release\culminating.exe.manifest

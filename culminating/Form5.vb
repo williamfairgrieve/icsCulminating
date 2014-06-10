@@ -1,9 +1,8 @@
 ﻿Public Class quadForm
-
+    Public sinA As Single 'Declare variables for coeficcients
+    Public sinB As Single
+    Public sinC As Single
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim sinA As Single 'Declare variables for coeficcients
-        Dim sinB As Single
-        Dim sinC As Single
         Dim discriminate As Single 'Declare variable for discriminate
         Dim sinZeros(0 To 1) As Single 'Declare single array for zeros
 
